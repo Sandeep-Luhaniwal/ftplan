@@ -13,23 +13,23 @@ const Tabplan = () => {
                 <div className='position-absolute tabsposition'>
                     <ul className='mb-0 ps-0 d-flex overflow-auto'>
                         <li onClick={() => handleTabClick("First")} className="cursor-pointer border-lt mb-0">
-                            <span className={`ff_primary fw_bold fs_2sm btnTabactive ${activetab == "First" ? "bg_primary color_white " : "color_cardHeading btnTab"}`}>
+                            <span className={`ff_primary fw_bold fs_2sm btnTabactive ${activetab === "First" ? "bg_primary color_white " : "color_cardHeading btnTab"}`}>
                                 Economy
                             </span>
                         </li>
                         <li onClick={() => handleTabClick("Second")} className="cursor-pointer">
-                            <span className={`ff_primary fw_bold fs_2sm btnTabactive2 ${activetab == "Second" ? "bg_primary color_white" : "color_cardHeading btnTab2"}`}>
+                            <span className={`ff_primary fw_bold fs_2sm btnTabactive2 ${activetab === "Second" ? "bg_primary color_white" : "color_cardHeading btnTab2"}`}>
                                 Busniness
                             </span>
                         </li>
                         <li onClick={() => handleTabClick("Thrid")} className="cursor-pointer border-rt">
-                            <span className={`ff_primary fw_bold fs_2sm btnTabactive3 ${activetab == "Thrid" ? "bg_primary color_white" : "color_cardHeading btnTab3"}`}>
+                            <span className={`ff_primary fw_bold fs_2sm btnTabactive3 ${activetab === "Thrid" ? "bg_primary color_white" : "color_cardHeading btnTab3"}`}>
                                 First
                             </span>
                         </li>
                     </ul>
                     <div className=' w-100'>
-                        {activetab == "First" && (
+                        {activetab === "First" && (
                             <div className='borderTab p-20 p-sm-30 p-md-40 bg-white'>
                                 <div className='d-flex align-items-center justify-content-between flex-wrap'>
                                     <div className='d-flex align-items-center'>
@@ -74,7 +74,7 @@ const Tabplan = () => {
                                 </div>
                             </div>
                         )}
-                        {activetab == "Second" && (
+                        {activetab === "Second" && (
                             <div className='borderTab p-20 p-sm-30 p-md-40 bg-white'>
                                 <div className='d-flex flex-wrap justify-content-between'>
                                     <div className='d-flex align-items-center'>
@@ -119,7 +119,7 @@ const Tabplan = () => {
                                 </div>
                             </div>
                         )}
-                        {activetab == "Thrid" && (
+                        {activetab === "Thrid" && (
                             <div className='borderTab p-20 p-sm-30 p-md-40 bg-white'>
                                 <div className='d-flex flex-wrap justify-content-between'>
                                     <div className='d-flex align-items-center'>

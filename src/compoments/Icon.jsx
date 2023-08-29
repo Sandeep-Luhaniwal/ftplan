@@ -230,3 +230,20 @@ export const TopIcon = () => {
         </svg>
     );
 };
+
+//LEFT ARROW ICON
+export const LeftarrowIcon = () => {
+    return (
+        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 1.5L2 9.5L10 17.5" stroke="white" stroke-width="2" />
+        </svg>
+    );
+};
+//RIGHT ARROW ICON
+export const RightarrowIcon = () => {
+    return (
+        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17.5L9 9.5L1 1.5" stroke="white" stroke-width="2" />
+        </svg>
+    );
+};

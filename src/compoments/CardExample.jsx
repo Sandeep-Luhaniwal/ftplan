@@ -1,10 +1,8 @@
 import React from "react";
 import { StackedCarousel, ResponsiveContainer } from "react-stacked-center-carousel";
-import Fab from "@material-ui/core/Fab";
-import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import { Slide } from "./Slide";
 import dotted from '../assets/images/png/dotted_line.png'
+import { LeftarrowIcon, RightarrowIcon } from "./Icon";
 
 const data = [
     {
@@ -115,20 +113,20 @@ const CardExample = () => {
                         );
                     }}
                 />
-                <Fab
+                <div
                     className="leftBtn"
                     size="small"
                     onClick={() => ref.current?.goBack()}
                 >
-                    <KeyboardArrowLeftIcon style={{ fontSize: 30 }} />
-                </Fab>
-                <Fab
+                    <LeftarrowIcon />
+                </div>
+                <div
                     className="rightBtn"
                     size="small"
                     onClick={() => ref.current?.goNext()}
                 >
-                    <KeyboardArrowRightIcon style={{ fontSize: 30 }} />
-                </Fab>
+                    <RightarrowIcon />
+                </div>
                 <div className="dottedLine d-none d-sm-block d-md-none d-lg-block">
                     <img src={dotted} alt="dotted" />
                 </div>
